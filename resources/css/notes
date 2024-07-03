@@ -1,0 +1,241 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6D1B94;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('assets/book-cover.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.cover h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cover button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #6D1B94;
+}
+
+.cover button:hover {
+  background-color: #ccc;
+}
+
+.notebook {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.notebook .header {
+  background-color: #6D1B94;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.notebook .header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+  background-image: url('assets/notebook-lines.png');
+  background-size: cover;
+}
+
+.note {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.note-content {
+  padding: 10px;
+}
+
+.note h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #6D1B94;
+  font-weight: bold;
+}
+
+.note p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-note,
+.delete-note {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6D1B94;
+  color: #fff;
+  font-size: 14px;
+}
+
+.edit-note:hover,
+.delete-note:hover {
+  background-color: #4D0C66;
+}
+
+.add-save-container {
+  margin-top: 20px;
+}
+
+.add-note {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6D1B94;
+  color: #fff;
+  font-size: 16px;
+}
+
+.add-note:hover {
+  background-color: #4D0C66;
+}
+
+
+.header {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.note:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  background-image: url('https://emojicombos.com/files/emoji-magic/book-emojis.png');
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.note-content {
+  padding: 10px;
+}
+
+.note h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #6D1B94;
+  font-weight: bold;
+}
+
+.note p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-note,
+.delete-note {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6D1B94;
+  color: #fff;
+  font-size: 14px;
+}
+
+.edit-note:hover,
+.delete-note:hover {
+  background-color: #4D0C66;
+}
+
+.add-save-container {
+  margin-top: 20px;
+}
+
+.add-note {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6D1B94;
+  color: #fff;
+  font-size: 16px;
+}
+
+.add-note:hover {
+  background-color: #4D0C66;
+}
